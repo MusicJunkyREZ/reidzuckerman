@@ -17,11 +17,24 @@ app.get('/', (req, res)=>{
     res.sendFile(__dirname + `/public/index.html`)
 });
 
+// To make this work with locally first take off the Gmail's security
+// Now to make it work with Heroku deployment go to https://accounts.google.com/b/0/DisplayUnlockCaptcha and make sure only one Gmail account is open in the browser
+// After refreshing the page with the Gmail that is logged in, it should work.
 app.post('/', (req, res) => {
     console.log(req.body);
 
+    // const transporter = nodemailer.createTransport({
+    //     service: 'gmail',
+    //     auth: {
+    //         user: 'reidzuckermanmusic@gmail.com',
+    //         pass: `${password}`
+    //     }
+    // })
+
     const transporter = nodemailer.createTransport({
-        service: 'gmail',
+        host: 'smtp.gmail.com',
+        port: 465,
+        secure: true,
         auth: {
             user: 'reidzuckermanmusic@gmail.com',
             pass: `${password}`
