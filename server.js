@@ -31,6 +31,7 @@ app.post('/', (req, res) => {
     //     }
     // })
 
+    //  set the new transporter service to this 
     const transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
         port: 465,
