@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/f31a571feb.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    </head>
+    <body>
+        <!-- <span class="scroll-up-btn">
+            <i class="fas fa-angle-up"></i>
+        </span> -->
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="#">Reid<span>Zuckerman</span></a></div>
+                <ul class="menu">
+                    <li><a href="#home" class="menu-btn">Home</a></li>
+                    <li><a href="#about" class="menu-btn">About</a></li>
+                    <li><a href="#services" class="menu-btn">Services</a></li>
+                    <li><a href="#ebook" class="menu-btn">eBook</a></li>
+                    <li><a href="#music" class="menu-btn">Music</a></li>
+                    <li><a href="#contact" class="menu-btn">Contact</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    <!-- Home section -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Reid</div>
+                <div class="text-3">And I am a <span class="typing"></span></div>
+                <a href="#contact">Looking For Guitar Lessons?</a>
+            </div>
+        </div>
+    </section>
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="./images/RezAnimated.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Reid and I'm a <span class="typing-2"></span></div>
+                    <p>Born in New Hampshire, USA, I have been playing guitar for 13 years and have been teaching for 11.  I received my Bachelor's in Economics and minor in Music with a focus in jazz studies from the University of Rochester and The Eastman School of Music.  My guitar students include all ages and genres.  With classes broken up into two sections, theory and songs, I ensure that every student receives important knowledge about not only guitar, but music itself, and tie in the practical applications of it to their favorite songs for a more in depth learning experience.</p>
+                    <a href="#contact">Get in touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My Services</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-guitar"></i>
+                        <div class="text">Guitar Teaching</div>
+                        <p>With 11 years of guitar teaching experience, I have taught all ages, levels and styles.  With a focus on music theory and learning your favorite songs, I ensure every student receives learns not only the basics, but how to incorporate higher level musical knowledge to any song.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-music"></i>
+                        <div class="text">Music</div>
+                        <p>With 17 years of total music experience I have worked on various independent projects musical projects including writing, recording and performing.  With a background in music theory and various interests in genres I bring a unique perspective to any musical project.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-headphones"></i>
+                        <div class="text">Composition</div>
+                        <p>Having written multiple compositions and full length songs in various genres.  By working with various genres I ensure that my writing style continues to evolve as I pursue new unique and innovative sounds.  This broad spectrum makes me the perfect fit for any musical project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- free eBook scetion -->
+    <section class="ebook" id="ebook">
+        <div class="max-width">
+            <h2 class="title">Want My <span>FREE</span> Beginner's Guide to Guitar?</h2>
+            <div class="ebook-content">
+                <div class="column left">
+                    <img src="images/RezAnimated.jpg"/>
+                    <!-- <div class="text">How's it going?</div>
+                    <p>My inbox is always open for any inquires.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Reid Zuckerman</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Denver, CO, USA</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">reidzuckermanmusic@gmail.com</div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="column right">
+                    <div class="text">Message Me</div>
+                    <form class="ebook-contact-form">
+                        <!-- <div class="fields"> -->
+                        <div id="field" class="field name">
+                            <input id="ebookName" type="text" placeholder="Name" required>
+                        </div>
+                        <div id="field" class="field email">
+                            <input id="ebookEmail" type="email" placeholder="Email" required>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Get FREE eBook!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>         
+        </div>
+    </section>
+
+    <!-- skills seciton start -->
+    <!-- <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My creative skills and experience</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices luctus nulla, a volutpat magna. Integer convallis eu augue id tincidunt. Curabitur et orci et metus ullamcorper cursus. Quisque rutrum tincidunt dui sed luctus. Cras.</p>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Javascript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line javascript"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>PHP</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- teams section start -->
+    <section class="music" id="music">
+        <!-- 1:13:50  teams styling wont work, wont put background of black despite .teams-->
+        <div class="max-width">
+            <h2 class="title">My Music</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <iframe width="250" height="315" src="https://www.youtube.com/embed/M9VynrPzNO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <!-- <img src="./images/RezAnimated.jpg" alt="">
+                        <div class="text">Someone name</div>
+                        <p>lorem isume asdflk;j anfnvo asdfjhasgp</p> -->
+                    </div>               
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <iframe width="250" height="315" src="https://www.youtube.com/embed/jtfmSeQ60a0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>               
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <iframe width="250" height="315" src="https://www.youtube.com/embed/waLd9RAn6ZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>               
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <iframe width="250" height="315" src="https://www.youtube.com/embed/UEnTube-r94" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>               
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <iframe width="250" height="315" src="https://www.youtube.com/embed/AcDSOhaByuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>               
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <!-- soundcloud section -->
+    <section class="soundcloud-guitar-music" id="soundcloud-guitar-music">
+        <div class="max-width">
+            <h2 class="title"></h2>
+            <div class="card">
+                <div class="box">
+                    <iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/921534970&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/reidzuckerman" title="Reid Zuckerman" target="_blank" style="color: #cccccc; text-decoration: none;">Reid Zuckerman</a> · <a href="https://soundcloud.com/reidzuckerman/bridge-demo-guitars-drums" title="Bridge DEMO [Guitars &amp; Drums]" target="_blank" style="color: #cccccc; text-decoration: none;">Bridge DEMO [Guitars &amp; Drums]</a></div>
+                </div>               
+            </div>
+            <div class="card">
+                <div class="box">
+                    <iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/370644080&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/reidzuckerman" title="Reid Zuckerman" target="_blank" style="color: #cccccc; text-decoration: none;">Reid Zuckerman</a> · <a href="https://soundcloud.com/reidzuckerman/generations" title="Generations" target="_blank" style="color: #cccccc; text-decoration: none;">Generations</a></div>
+                </div>               
+            </div>
+        </div>
+    </section>
+
+    <section class="soundcloud-soundtrack-music" id="soundcloud-soundtrack-music">
+        <div class="max-width">
+            <h2 class="title"></h2>
+            <div class="card">
+                <div class="box">
+                    <iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/701781880&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/reidzuckerman" title="Reid Zuckerman" target="_blank" style="color: #cccccc; text-decoration: none;">Reid Zuckerman</a> · <a href="https://soundcloud.com/reidzuckerman/boss-battle" title="Boss Battle" target="_blank" style="color: #cccccc; text-decoration: none;">Boss Battle</a></div>
+                </div>               
+            </div>
+            <div class="card">
+                <div class="box">
+                    <iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1096004830&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/reidzuckerman" title="Reid Zuckerman" target="_blank" style="color: #cccccc; text-decoration: none;">Reid Zuckerman</a> · <a href="https://soundcloud.com/reidzuckerman/scaling-the-roofs-of-peking" title="Scaling The Roofs Of Peking" target="_blank" style="color: #cccccc; text-decoration: none;">Scaling The Roofs Of Peking</a></div>
+                </div>               
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">How's it going?</div>
+                    <p>My inbox is always open for any inquires.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Reid Zuckerman</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Denver, CO, USA</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">reidzuckermanmusic@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message Me</div>
+                    <form class="contact-form">
+                        <div class="fields">
+                            <div class="field name">
+                                <input id="name" type="text" placeholder="Name" required>
+                            </div>
+                            <div id="field" class="field email">
+                                <input id="email" type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field subject">
+                            <input id="subject" type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea id="message" col="30" rows="10" placeholder="What's going on?" required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>         
+        </div>
+    </section>
+
+    <!-- test contact section start -->
+    <!-- <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">How's it going?</div>
+                    <p>My inbox is always open for any inquires.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Reid Zuckerman</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Denver, CO, USA</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">reidzuckermanmusic@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message Me</div>
+                    <form class="test-contact-form">
+                        <div class="fields">
+                            <div class="field name">
+                                <input id="testname" type="text" placeholder="Name" required>
+                            </div>
+                            <div id="field" class="field email">
+                                <input id="testemail" type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field subject">
+                            <input id="testsubject" type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea id="testmessage" col="30" rows="10" placeholder="What's going on?" required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>         
+        </div>
+    </section> -->
+
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <a href="#">Reid Zuckerman</a> | <span class="far fa-copy"></span> 2021 All rights reserved.</span>
+    </footer>
+    <script src="./js/script.js"></script>
+    </body>
+</html>
