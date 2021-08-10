@@ -17,6 +17,9 @@ app.get('/', (req, res)=>{
     res.sendFile(__dirname + `/public/index.html`)
 });
 
+// Code from EmailJS
+
+
 // To make this work with locally first take off the Gmail's security
 // Now to make it work with Heroku deployment go to https://accounts.google.com/b/0/DisplayUnlockCaptcha and make sure only one Gmail account is open in the browser
 // After refreshing the page with the Gmail that is logged in, it should work.
@@ -31,7 +34,9 @@ app.post('/', (req, res) => {
     //     }
     // })
 
-    //  set the new transporter service to this 
+    //  set the new transporter service to this from this article https://jay315.medium.com/sending-email-using-express-js-with-nodemailer-in-heroku-71741f29463c
+    // seemed like the UNLOCK CAPTCHA page only worked temporarily, so had to allow POP and SMTP from everywhere from this article https://support.google.com/mail/thread/9828582/how-to-unlock-captcha?hl=en
+    // person here says port 465 needs to be open on heroku https://stackoverflow.com/questions/44729580/how-can-i-get-nodemailer-to-work-with-heroku
     const transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
         port: 465,
@@ -58,6 +63,42 @@ app.post('/', (req, res) => {
             res.send('success');
         }
     })
+})
+
+// OUTLOOK
+
+// var transporter = nodemailer.createTransport({
+//     host: "smtp-mail.outlook.com", // hostname
+//     secureConnection: false, // TLS requires secureConnection to be false
+//     port: 587, // port for secure SMTP
+//     tls: {
+//        ciphers:'SSLv3'
+//     },
+//     auth: {
+//         user: 'reidzuckermanmusic2@outlook.com',
+//         pass: `${password}`
+//     }
+// });
+
+// // setup e-mail data, even with unicode symbols
+// var mailOptions = {
+//     from: `"Tester", <reidzuckermanmusic2@outlook.com>`, // sender address (who sends)
+//     to: '<reidzuckermanmusic@outlook.com>', // list of receivers (who receives)
+//     subject: `${req.body.subject}`, // Subject line
+//     text: `${req.body.subject}`, // plaintext body
+//     html: '<b>Hello world </b><br> This is the first email sent with Nodemailer in Node.js' // html body
+// };
+
+// // send mail with defined transport object
+// transporter.sendMail(mailOptions, function(error, info){
+//     if(error){
+//         return console.log(error);
+//     }
+
+//     console.log('Message sent: ' + info.response);
+//     alert('sent')
+// });
+
 })
 
 app.listen(PORT, ()=>{
