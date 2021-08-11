@@ -123,11 +123,11 @@ ebookContactForm.addEventListener('submit', (e)=>{
     ebookxhr.onload = function(){
         console.log(ebookxhr.responseText);
         if(ebookxhr.responseText == 'success'){
-            alert('Thank you!  Your free eBook will be delivered within 24 hours :)');
+            alert('Thank you!  Your free eBook will sent to you as soon as it is finished! :)');
             ebookName.value = '';
             ebookEmail.value = '';
         } else {
-            alert('Something went wrong!')
+            alert(`Something went wrong..  But don't fret!  Just email me at reidzuckermanmusic@gmail.com and I will send you over you free eBook (and then fix this issue!)`)
         }
     }
 

@@ -302,7 +302,7 @@ section .title::after{
 /* ebook section styling */
 
 .ebook .title::after{
-    content:"Click Below!";
+    content:"Coming Soon!";
 }
 .ebook span{
     color: royalblue;
@@ -399,6 +399,17 @@ section .title::after{
     background: none;
 }
 
+.ebook-subtitle {
+    color: royalblue;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ebook-description {
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
 /* teams section styling */
 .music .title:after{
     content: "Short Pieces";
@@ -577,8 +588,14 @@ footer span a{
     color: royalblue;
     text-decoration: none;
 }
+.fab .fa-instagram{
+    font-family: 'Poppins', sans-serif !important
+}
 footer span a:hover{
     text-decoration: underline;
+}
+#footer-links {
+    font-family: 'Poppins', sans-serif
 }
 
 
@@ -774,4 +791,18 @@ footer span a:hover{
         font-size: 27px;
         
     }
+}
+
+@media (max-width: 360px) {
+    .home .home-content .text-2{
+        font-size: 50px;
+        
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+        
+    }
+    /* .column .left{
+        width: 100%;
+    } */
 }
