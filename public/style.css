@@ -802,7 +802,8 @@ footer span a:hover{
         font-size: 27px;
         
     }
-    /* .column .left{
+    .column .left{
         width: 100%;
-    } */
+        background-size: contain;
+    }
 }
