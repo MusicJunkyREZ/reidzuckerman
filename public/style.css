@@ -101,7 +101,7 @@ html{
 /* home section */
 .home{
     display: flex;
-    background: url("images/main.jpg") no-repeat center;
+    background: url("images/mainPhoto2.JPG") no-repeat center;
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -152,7 +152,7 @@ html{
 section{
     padding: 85px 0;
 }
-.about, .services, .skills, .music, .contact, footer{
+.about, .services, .skills, .music, .lessons, .contact, footer{
     font-family: 'Poppins', sans-serif
 }
 .about .about-content,
@@ -410,7 +410,7 @@ section .title::after{
     font-size: 22px;
     font-family: 'Poppins', sans-serif;
 }
-/* teams section styling */
+/* music video section styling, originally sections */
 .music .title:after{
     content: "Short Pieces";
 }
@@ -454,6 +454,53 @@ section .title::after{
 .music .carousel .card:hover img{
     border-color: #fff;
 }
+
+/* lesson video styling */
+.lessons .title:after{
+    content: "Examples";
+}
+
+.lessons .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.lessons .carousel .card:hover{
+    background: royalblue;
+}
+
+.lessons .carousel .card .box{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.lessons .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+
+.lessons .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.lessons .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid royalblue;
+    transition: all 0.3s ease;
+}
+.lessons .carousel .card:hover img{
+    border-color: #fff;
+}
+
+/* need below for both music videos and lessons */
 .owl-dots{
     text-align: center;
     margin-top: 20px;
@@ -805,5 +852,11 @@ footer span a:hover{
     .column .left{
         width: 100%;
         background-size: contain;
+    }
+    .about .about-content .left img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 6px;
     }
 }
