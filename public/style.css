@@ -853,6 +853,9 @@ footer span a:hover{
         width: 100%;
         background-size: contain;
     }
+    .about .about-content .column{
+        width: 100%;
+    }
     .about .about-content .left img{
         height: 100%;
         width: 100%;
