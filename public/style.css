@@ -858,9 +858,9 @@ footer span a:hover{
         width: 100%;
     }
     .about .about-content .left img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 6px;
+        height: 100% !important;
+        width: 100% !important;
+        object-fit: cover !important;
+        /* border-radius: 6px; */
     }
 }
