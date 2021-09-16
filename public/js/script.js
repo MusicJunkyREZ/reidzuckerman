@@ -12,6 +12,20 @@ $(document).ready(function(){
         }
     });
 
+    // change photo based screen size
+    $(window).resize(function(e){
+        if($(window).width() < 568) {
+        console.log($(window).width());
+         $("#about-content-img").each(function() {
+           $(this).attr("src", "../images/main.jpg");
+                     });
+                 } else if ($(window).width() >= 568) {
+                     $("#about-content-img").each(function() {
+                     $(this).attr("src","../images/RezAnimated.jpg");
+                     });                        
+         }         
+     });
+
     // slide up script
     $('.scroll-up-btn').on('click', function(){
         $('html, body').animate({scrollTop: 0})

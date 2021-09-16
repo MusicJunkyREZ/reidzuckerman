@@ -858,6 +858,7 @@ footer span a:hover{
         width: 100%;
     }
     .about .about-content .left img{
+        background: url("images/mainPhoto2.JPG") no-repeat center;
         height: 100% !important;
         width: 100% !important;
         object-fit: cover !important;
