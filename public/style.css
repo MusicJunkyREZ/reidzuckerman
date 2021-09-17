@@ -557,8 +557,14 @@ section .title::after{
     height: 65px;
     align-items: center;
 }
-.contact .contact-content .row .info{
+.contact .contact-content .row .info-name{
     margin-left: 30px;
+}
+.contact .contact-content .row .info-address{
+    margin-left: 32px;
+}
+.contact .contact-content .row .info-email{
+    margin-left: 25px;
 }
 .contact .contact-content .row i{
     font-size: 25px;
