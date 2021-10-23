@@ -41,13 +41,13 @@ $(document).ready(function(){
 
     // typing animation script
     var typed = new Typed(".typing", {
-        strings: ["Guitarist", "Musician", "Developer", "Composer"],
+        strings: ["Guitarist", "Musician", "Teacher", "Composer"],
         typeSpeed: 100,
         backSpeed: 60, 
         loop: true
     })
     var typed = new Typed(".typing-2", {
-        strings: ["Guitarist", "Musician", "Developer", "Composer"],
+        strings: ["Guitarist", "Musician", "Teacher", "Composer"],
         typeSpeed: 100,
         backSpeed: 60, 
         loop: true
@@ -105,7 +105,8 @@ contactForm.addEventListener('submit', (e)=>{
             subject.value = '';
             message.value = '';
         } else {
-            alert('Something went wrong!')
+            alert(
+                'Something went wrong!  Please try one more time... Second time trying?  Please reach me at reidzuckermanmusic@gmail.com with your inquiry.')
         }
     }
 
