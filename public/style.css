@@ -576,6 +576,11 @@ section .title::after{
 .contact .contact-content .info .sub-title{
     color: #333;
 }
+.contact .contact-content .column .centered{
+    width: 100%;
+    text-align: center !important;
+    background-size: contain !important;
+}
 .contact .right form .fields{
     display: flex;
 }

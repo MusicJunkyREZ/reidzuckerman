@@ -8,7 +8,7 @@ console.log(process.env);
 // for this view video 3.5 at 11 minutes to heroku config the password
 const password = process.env.PASSWORD
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 
 app.use(express.static('public'));
 app.use(express.json());
