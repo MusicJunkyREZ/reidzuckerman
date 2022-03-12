@@ -16,7 +16,7 @@ app.use(express.json());
 
 const transport = nodemailer.createTransport(sendgrindTransport({
     auth:{
-        api_key: PASSWORD;
+        api_key: PASSWORD
     }
 }))
 
