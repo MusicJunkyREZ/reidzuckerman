@@ -16,7 +16,7 @@ app.use(express.json());
 
 const transport = nodemailer.createTransport(sendgrindTransport({
     auth:{
-        api_key: password
+        api_key: "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"
     }
 }))
 
@@ -42,8 +42,11 @@ app.post('/', (req, res) => {
         html:`<h1>Message from ${req.body.email}: ${req.body.subject}</h1>
             <br>
             <h2>${req.body.message}</h2>`
-    })
-    .catch(err => console.log(err));
+    }).catch(err => console.log(err));
+
+    // document.getElementByClass('contact-form').reset()
+    // .then(() => window.alert('email sent!'))
+    
 
     // const transporter = nodemailer.createTransport({
     //     service: 'gmail',
@@ -82,7 +85,7 @@ app.post('/', (req, res) => {
     //         res.send('success');
     //     }
     // })
-})
+});
 
 // OUTLOOK
 

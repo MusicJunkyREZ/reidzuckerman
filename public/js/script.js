@@ -113,6 +113,42 @@ contactForm.addEventListener('submit', (e)=>{
     xhr.send(JSON.stringify(formData))
 });
 
+// adding event listener to clear form when sendgrid works
+
+function clearForm(){
+    document.getElementById('name').value('');
+    document.getElementById('email').value('');
+    document.getElementById('text').value('');
+    document.getElementById('message').value('');
+}
+
+contactForm.addEventListener('submit', (e)=>{
+    e.preventDefault();
+    
+    alert(`Message Sent!  I'll get back to you soon! 🎸`);
+
+    document.getElementById('name').attr('placeholder');
+    document.getElementById('email').attr('placeholder');
+    document.getElementById('text').attr('placeholder');
+    document.getElementById('message').attr('placeholder');
+
+
+    // clearForm();
+    
+});
+
+// contactForm.addEventListener('submit', (e)=>{
+//     e.preventDefault();
+ 
+//     document.getElementById('name').value('');
+//     document.getElementById('email').value('');
+//     document.getElementById('text').value('');
+//     document.getElementById('message').value('');
+
+    
+    
+// });
+
 // free ebook nodemailer script
 const ebookContactForm = document.querySelector('.ebook-contact-form');
 let ebookName = document.getElementById('ebookName');
@@ -150,3 +186,19 @@ ebookContactForm.addEventListener('submit', (e)=>{
     let thing = JSON.stringify(ebookFormData);
     console.log(thing)
 });
+
+// sendgrid code for free ebook
+
+// app.post('/', (req, res) => {
+//     console.log(req.body);
+
+//     transport.sendMail({
+//         to: `reidzuckerman@gmail.com`,
+//         from: `reidzuckermanmusic@gmail.com`,
+//         subject: `Message from ${req.body.email}: ${req.body.subject}`,
+//         html:`<h1>Message from ${req.body.email}: ${req.body.subject}</h1>
+//             <br>
+//             <h2>${req.body.message}</h2>`
+//     }).catch(err => console.log(err));
+
+// })
