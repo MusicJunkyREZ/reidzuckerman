@@ -83,35 +83,35 @@ let email = document.getElementById('email');
 let subject = document.getElementById('subject');
 let message = document.getElementById('message');
 
-contactForm.addEventListener('submit', (e)=>{
-    e.preventDefault();
+// contactForm.addEventListener('submit', (e)=>{
+//     e.preventDefault();
     
-    let formData = {
-        name: name.value,
-        email: email.value,
-        subject: subject.value,
-        message: message.value
-    }
+//     let formData = {
+//         name: name.value,
+//         email: email.value,
+//         subject: subject.value,
+//         message: message.value
+//     }
 
-    let xhr = new XMLHttpRequest();
-    xhr.open('POST', '/');
-    xhr.setRequestHeader('content-type', 'application/json')
-    xhr.onload = function(){
-        console.log(xhr.responseText);
-        if(xhr.responseText == 'success'){
-            alert('Email sent');
-            name.value = '';
-            email.value = '';
-            subject.value = '';
-            message.value = '';
-        } else {
-            alert(
-                'Something went wrong!  Please try one more time... Second time trying?  Please reach me at reidzuckermanmusic@gmail.com with your inquiry.')
-        }
-    }
+//     let xhr = new XMLHttpRequest();
+//     xhr.open('POST', '/');
+//     xhr.setRequestHeader('content-type', 'application/json')
+//     xhr.onload = function(){
+//         console.log(xhr.responseText);
+//         if(xhr.responseText == 'success'){
+//             alert('Email sent');
+//             name.value = '';
+//             email.value = '';
+//             subject.value = '';
+//             message.value = '';
+//         } else {
+//             alert(
+//                 'Something went wrong!  Please try one more time... Second time trying?  Please reach me at reidzuckermanmusic@gmail.com with your inquiry.')
+//         }
+//     }
 
-    xhr.send(JSON.stringify(formData))
-});
+//     xhr.send(JSON.stringify(formData))
+// });
 
 // adding event listener to clear form when sendgrid works
 
@@ -178,7 +178,7 @@ ebookContactForm.addEventListener('submit', (e)=>{
             ebookName.value = '';
             ebookEmail.value = '';
         } else {
-            alert(`Something went wrong..  But don't fret!  Just email me at reidzuckermanmusic@gmail.com and I will send you over you free eBook (and then fix this issue!)`)
+            // alert(`Something went wrong..  But don't fret!  Just email me at reidzuckermanmusic@gmail.com and I will send you over you free eBook (and then fix this issue!)`)
         }
     }
 
